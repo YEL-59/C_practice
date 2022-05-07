@@ -1,10 +1,12 @@
-/*#include <stdio.h>
+#include <stdio.h>
 int main()
 {
     // printf() displays the string inside quotation
     printf("Hello, World!");
     return 0;
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -14,6 +16,7 @@ int main()
     printf("cube of number is:%d ", num * num * num);
     return 0;
 }
+
 
 #include <stdio.h>
 int main()
@@ -27,14 +30,16 @@ int main()
     printf("the result is:%d ", result);
 
     return 0;
-}*/
-/*#include<stdio.h>
+}
+
+
+#include<stdio.h>
 int main(){
-    /*char a;
+    char a;
     printf("enter your asci char:");
     scanf("%c",&a);
     printf("the value is %d:",a);*/
-/*int i;
+int i;
 for(i=0;i<=255;i++){
     printf("\nthe value of %c is %d",i,i);
 }
@@ -51,6 +56,8 @@ if(number%2==0){
 }
 return 0;
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -75,6 +82,8 @@ int main()
     }
     return 0;
 }
+
+
 #include<stdio.h>
 int main(){
     int j = 1;
@@ -87,6 +96,8 @@ int main(){
     return 0;
 
 }
+
+
 #include<stdio.h>
 int main(){
     int i,n;
@@ -98,6 +109,8 @@ int main(){
 
     return 0;
 }
+
+
 #include<stdio.h>
 int main(){
     int i,sum=0;
@@ -108,6 +121,8 @@ int main(){
     printf("sum is:%d",sum);
     return 0;
 }
+
+
 #include<stdio.h>
 int main()
 {
@@ -120,6 +135,8 @@ int main()
     printf("the number is%d and the sum result is%d",n,sum);
     return 0;
 }
+
+
 #include<stdio.h>
 int main(){
     int i,n,j,sum=0;
@@ -136,6 +153,8 @@ int main(){
     printf("the iven nuber is '%d' the sum is: %d and avg is%f",n,sum,avg);
 }
 
+
+
 #include<stdio.h>
 int main(){
     int i,n,j;
@@ -146,6 +165,8 @@ int main(){
         printf("number is %d-cude of %d  is:%d\n",i,i,j);
     }
 }
+
+
 #include<stdio.h>
 int main(){
    int i,n,ans;
@@ -156,6 +177,8 @@ int main(){
        printf("%d X %d = %d\n",n,i,ans);
    }
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -173,6 +196,8 @@ int main()
         printf("\n");
     }
 }
+
+
 #include<stdio.h>
 int main(){
     int i,n,ans=0;
@@ -187,6 +212,8 @@ int main(){
     }
     printf("%d",ans);
 }
+
+
 #include<stdio.h>
 int main(){
     int i,j,n;
@@ -200,6 +227,8 @@ int main(){
         printf("\n");
     }
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -209,8 +238,10 @@ int main()
 
     }
 }
+
+
 /*************************array*************************************/
-/*
+
 #include<stdio.h>
 int main(){
     int arr[5]={10,20,30,40,50};
@@ -224,6 +255,8 @@ int main(){
      printf("%d\n",arr[i]);
  }
 }
+
+
 #include<stdio.h>
 int main()
 {
@@ -243,6 +276,8 @@ int main()
 
     return 0;
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -265,6 +300,8 @@ int main()
     }
     return 0;
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -298,6 +335,8 @@ int main()
 
     return 0;
 }
+
+
 #include<stdio.h>
 int main()
 {
@@ -320,6 +359,8 @@ int main()
     }
     return 0;
 }
+
+
 #include <stdio.h>
 int main()
 {
@@ -350,6 +391,8 @@ int main()
     printf("\nTotal number of duplicate elements found in array = %d", count);
     return 0;
 }
+
+
 #include<stdio.h>
 int main(){
     int i,n,arr[10],mx,mn;
@@ -374,7 +417,9 @@ int main(){
     }
     printf("Maximum element is : %d\n", mx);
     printf("Minimum element is : %d\n\n", mn);
-}*/
+}
+
+
 #include<stdio.h>
 int main()
 {
