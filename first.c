@@ -38,7 +38,7 @@ int main(){
     char a;
     printf("enter your asci char:");
     scanf("%c",&a);
-    printf("the value is %d:",a);*/
+    printf("the value is %d:",a);
 int i;
 for(i=0;i<=255;i++){
     printf("\nthe value of %c is %d",i,i);
@@ -220,7 +220,7 @@ int main(){
     printf("enter the pattern rows:");
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        for(j=1;j<=i;j++){
+        for(j=1;j<=i;j++){                                               
             printf("*");
 
         }
@@ -340,7 +340,7 @@ int main()
 #include<stdio.h>
 int main()
 {
-    int i,arr1[+]={10,20,30,40,50};
+    int i,arr1[]={10,20,30,40,50};
     int length = sizeof(arr1)/sizeof(arr1[0]);
     printf("%d",length);
     int arr2[length];
