@@ -10,7 +10,7 @@ int main()
 #include <stdio.h>
 int main()
 {
-    int num;
+    int num;//int type
     printf("enter an number:");
     scanf("%d",& num);
     printf("cube of number is:%d ", num * num * num);
