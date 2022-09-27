@@ -152,7 +152,7 @@ int main()
         scanf("%d",&arr[i]);
 
     }
-    printf("yhe array is:");
+    printf("The array is:");
     for (i = 0; i < n; i++)
     {
         printf("%d", arr[i]);
