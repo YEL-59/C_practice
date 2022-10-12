@@ -3,6 +3,8 @@ int main(){
    int i,n,m,arr[20];
    printf("how many number youwant:");
    scanf("%d",&n);
+   
+   
    for(i=0;i<n;i++){
        printf("element %d:",i);
        scanf("%d",&arr[i]);
