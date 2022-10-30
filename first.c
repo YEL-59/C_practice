@@ -36,6 +36,7 @@ int main()
 
 #include<stdio.h>
 int main(){
+    
     char a;
     printf("enter your asci char:");
     scanf("%c",&a);
