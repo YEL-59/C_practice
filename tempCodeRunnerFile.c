@@ -143,32 +143,110 @@ int main()
 
     return 0;
 }*/
-#include<stdio.h>
+// #include<stdio.h>
+// int main()
+// {
+//     int i,n,arr[100],count=0;
+//     printf("size of array:");
+//     scanf("%d",&n);
+//     for(i=0;i<n;i++){
+//         printf("element of %d is:",i);
+//         scanf("%d",&arr[i]);
+
+//     }
+//     printf("The array is:");
+//     for (i = 0; i < n; i++)
+//     {
+//         printf("%d", arr[i]);
+//     }
+//     for (i = 0; i < n; i++)
+//     {
+//         for(int j=i+1;j<n;j++){
+//             if(arr[j]==arr[i]){
+//                  count++;
+//                  break;
+//             }
+
+//         }
+//     }
+//     printf("the duplicate array number are:%d",count);
+
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int number,count=0;
+//     printf("Enter An Number : ");
+//     scanf("%d",&number);
+
+//     while(number>0){
+//         number=number/10;
+//         count=count+1;
+//     }
+//     printf("the number is %d and digit is %d : ",number,count);
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+
+// int main(){
+//     int moneylist[8]= {500, 100, 50, 20, 10, 5, 2, 1};
+//     int amount,temp,i;
+// printf("Enter an amount: ");
+// scanf("%d",&amount);
+// temp=amount;
+
+//         for(i=0;i<8;i++){
+//           printf("\n %d Notes is=%d",moneylist[i],temp/moneylist[i]);
+//           temp=temp%moneylist[i];
+//         }
+      
+    
+// }
+
+
+/* C Program to Find factors of a number using for loop */
+
+// #include <stdio.h>
+ 
+// int main()
+// {
+//   int i, Number; 
+   
+//   printf("\n Please Enter any number to Find Factors \n");
+//   scanf("%d", &Number);
+ 
+//   printf("\n Factors of the Given Number are:\n");
+//   for (i = 1; i <= Number; i++)
+//    {
+//      if(Number%i == 0)
+//         {
+// 		 printf(" %d  ", i);
+// 		}
+//    }
+ 
+//   return 0;
+// }
+#include <stdio.h>
+ 
 int main()
 {
-    int i,n,arr[100],count=0;
-    printf("size of array:");
-    scanf("%d",&n);
-    for(i=0;i<n;i++){
-        printf("element of %d is:",i);
-        scanf("%d",&arr[i]);
-
-    }
-    printf("The array is:");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d", arr[i]);
-    }
-    for (i = 0; i < n; i++)
-    {
-        for(int j=i+1;j<n;j++){
-            if(arr[j]==arr[i]){
-                 count++;
-                 break;
-            }
-
-        }
-    }
-    printf("the duplicate array number are:%d",count);
-    return 0;
+  int i, Number,fac; 
+   
+  printf("\n Please Enter any number to Find Factors \n");
+  scanf("%d", &Number);
+ 
+  printf("\n Factors of the Given Number are:\n");
+  for (i = 1; i <= Number; i++)
+   {
+     fac=Number*i;
+   }
+  
+  printf("\nFactorial of %d = %d\n", Number, fac);
+  return 0;
 }
