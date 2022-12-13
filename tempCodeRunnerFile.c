@@ -233,20 +233,36 @@ int main()
 //   return 0;
 // }
 #include <stdio.h>
- 
+#include <math.h>
+
 int main()
 {
-  int i, Number,fac; 
-   
-  printf("\n Please Enter any number to Find Factors \n");
-  scanf("%d", &Number);
+  int Number, Temp, Reminder, Times =0, Sum = 0;
  
-  printf("\n Factors of the Given Number are:\n");
-  for (i = 1; i <= Number; i++)
-   {
-     fac=Number*i;
-   }
+  printf("\nPlease Enter number to Check \n");
+  scanf("%d", &Number);
   
-  printf("\nFactorial of %d = %d\n", Number, fac);
+  //Helps to prevent altering the original value
+  Temp = Number;
+  while (Temp != 0) 
+   {
+      Times = Times + 1;
+      Temp = Temp / 10;
+   } 
+  Temp = Number;
+  while( Temp > 0)
+   {
+     Reminder = Temp %10;
+     Sum = Sum + pow(Reminder, Times);
+     Temp = Temp /10;
+   }
+ 
+  printf("\n Sum of entered number is = %d\n", Sum);
+
+  if ( Number == Sum )
+      printf("\n %d is Armstrong Number.\n", Number);
+  else
+      printf("\n %d is not.\n", Number);
+ 
   return 0;
 }
