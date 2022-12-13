@@ -232,37 +232,197 @@ int main()
  
 //   return 0;
 // }
-#include <stdio.h>
-#include <math.h>
+// #include <stdio.h>
+// #include <math.h>
 
+// int main()
+// {
+//   int Number, Temp, Reminder, Times =0, Sum = 0;
+ 
+//   printf("\nPlease Enter number to Check \n");
+//   scanf("%d", &Number);
+  
+//   //Helps to prevent altering the original value
+//   Temp = Number;
+//   while (Temp != 0) 
+//    {
+//       Times = Times + 1;
+//       Temp = Temp / 10;
+//    } 
+//   Temp = Number;
+//   while( Temp > 0)
+//    {
+//      Reminder = Temp %10;
+//      Sum = Sum + pow(Reminder, Times);
+//      Temp = Temp /10;
+//    }
+ 
+//   printf("\n Sum of entered number is = %d\n", Sum);
+
+//   if ( Number == Sum )
+//       printf("\n %d is Armstrong Number.\n", Number);
+//   else
+//       printf("\n %d is not.\n", Number);
+ 
+//   return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int number,count=0;
+//     printf("Enter an number : ");
+//     scanf("%d",&number);
+
+//     while(number!=0){
+//         number=number/10;
+//         count=count+1;
+//     }
+//      printf("\n Number of Digits in a Given Number = %d", count);
+//     return 0;
+// }
+//gcd
+// #include<stdio.h>
+// int main(){
+//      int Num1, Num2, i, GCD;
+
+//     printf("Please Enter two integer Values \n");
+//     scanf("%d %d", &Num1, &Num2);
+
+//     for(i = 1; i <= Num1 && i <= Num2; i++)
+//     {
+//         if(Num1 % i == 0 && Num2 % i == 0)
+//             GCD = i;
+//     }
+
+//     printf("GCD of %d and %d is = %d", Num1, Num2, GCD);
+//     return 0;
+// }
+
+//generic root of a given number;
+
+// #include <stdio.h>
+
+// int main()
+// {
+//   int Number, Sum, Reminder;
+
+//   printf("\n Please Enter any number\n");
+//   scanf("%d", &Number);
+
+//   while(Number >= 10)
+//   {
+//     for (Sum=0; Number > 0; Number= Number/10)
+//     {
+//       Reminder = Number % 10;
+//       Sum=Sum + Reminder;
+//     }
+//     if(Sum >= 10)
+//     {
+//       Number = Sum;
+//     }
+//     else
+//     {
+//       printf("\n The Generic Root of a Given Number = %d", Sum);
+//       return 0;
+//     }
+//   }
+// }
+
+
+#include<stdio.h>
+int main(){
+    int Number,count,last_digit;
+    printf("enter an number:");
+    scanf("%d",&Number);
+
+    printf("Count the digit....");
+    while(Number!=0){
+        Number=Number/10;
+        count=count+1;
+    }
+    printf("Count the digit.... is %d:",count);
+    last_digit=Number%10;
+    
+  	printf(" \n The Last Digit of a Given Number %d =  %d", Number,last_digit);
+    return 0;
+}
+
+//Calculate Length of String without Using strlen() Function
+// #include <stdio.h>
+// int main() {
+//     char s[] = "Programming is fun";
+//     int i;
+
+//     for (i = 0; s[i] != '\0'; ++i);
+    
+//     printf("Length of the string: %d", i);
+//     return 0;
+// }
+
+//prime number check
+#include <stdio.h>
+
+int main() {
+
+  int n, i, flag = 0;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
+
+  // 0 and 1 are not prime numbers
+  // change flag to 1 for non-prime number
+  if (n == 0 || n == 1)
+    flag = 1;
+
+  for (i = 2; i <= n / 2; ++i) {
+
+    // if n is divisible by i, then n is not prime
+    // change flag to 1 for non-prime number
+    if (n % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  // flag is 0 for prime numbers
+  if (flag == 0)
+    printf("%d is a prime number.", n);
+  else
+    printf("%d is not a prime number.", n);
+
+  return 0;
+}
+/* C Program to count Alphabets Digits and Special Characters in a String */
+ 
+#include <stdio.h>
+ 
 int main()
 {
-  int Number, Temp, Reminder, Times =0, Sum = 0;
+  	char str[100];
+  	int i, alphabets, digits, special;
+  	i = alphabets = digits = special = 0;
  
-  printf("\nPlease Enter number to Check \n");
-  scanf("%d", &Number);
+  	printf("\n Please Enter any String  :  ");
+  	gets(str);
+  	
+  	while (str[i] != '\0')
+  	{
+  		if( (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') )
+  		{
+  			alphabets++;  	
+ 		}
+  		else if (str[i] >= '0' && str[i] <= '9')
+  		{
+  			digits++;  	
+  		}    
+  		else
+    		special++;
+    	i++;
+	}
+    printf("\n Number of Alphabets in this String = %d", alphabets);  
+	printf("\n Number of Digits in this String = %d", digits);  
+	printf("\n Number of Special Characters in this String = %d", special);  	
   
-  //Helps to prevent altering the original value
-  Temp = Number;
-  while (Temp != 0) 
-   {
-      Times = Times + 1;
-      Temp = Temp / 10;
-   } 
-  Temp = Number;
-  while( Temp > 0)
-   {
-     Reminder = Temp %10;
-     Sum = Sum + pow(Reminder, Times);
-     Temp = Temp /10;
-   }
- 
-  printf("\n Sum of entered number is = %d\n", Sum);
-
-  if ( Number == Sum )
-      printf("\n %d is Armstrong Number.\n", Number);
-  else
-      printf("\n %d is not.\n", Number);
- 
-  return 0;
+  	return 0;
 }
